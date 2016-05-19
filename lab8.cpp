@@ -154,7 +154,7 @@ int main(int argc, char *argv[])
 {
     SBSI sbsi;
     //
-    if (argc > 2) {
+    if (argc > 1) {
         Flt tolerance;
         if (argv[2] == NULL) {
             cout << "Correct use of unit test: ./exam 1 TOLERANCE\n";
@@ -168,8 +168,7 @@ int main(int argc, char *argv[])
         cout << endl;
         cout << "bad element count: " << badcount << endl;
         cout << "Unit test complete.\n";
-    }
-    if (argc < 2) {
+    } else {
         cout << "cs335 Surface-based body shape index calculator.\n";
         cout << endl;
         cout << "Input your 4 values now.\n";
